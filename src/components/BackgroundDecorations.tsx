@@ -16,17 +16,21 @@ const BackgroundDecorations = () => {
       {icons.map(({ Icon, position, delay }, index) => (
         <div
           key={index}
-          className={`absolute ${position} opacity-10 animate-pulse`}
+          className={`absolute ${position} opacity-8 animate-pulse hover:animate-bounce`}
           style={{ animationDelay: delay }}
         >
-          <Icon className="h-8 w-8 text-[#ADC7AC]" />
+          <Icon className="h-8 w-8 text-[#ADC7AC] transform transition-transform duration-1000 hover:rotate-12" />
         </div>
       ))}
       
-      {/* Floating circles */}
-      <div className="absolute top-1/4 left-1/3 w-32 h-32 bg-gradient-to-br from-[#ADC7AC]/5 to-[#E4BFA7]/5 rounded-full animate-pulse" style={{ animationDelay: '1s' }} />
-      <div className="absolute bottom-1/3 right-1/4 w-24 h-24 bg-gradient-to-br from-[#E4BFA7]/5 to-[#FFF8E7]/5 rounded-full animate-pulse" style={{ animationDelay: '2s' }} />
-      <div className="absolute top-1/2 left-10 w-16 h-16 bg-gradient-to-br from-[#FFF8E7]/5 to-[#ADC7AC]/5 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }} />
+      {/* Enhanced floating circles with subtle movement */}
+      <div className="absolute top-1/4 left-1/3 w-32 h-32 bg-gradient-to-br from-[#ADC7AC]/8 to-[#E4BFA7]/8 rounded-full animate-pulse transform hover:scale-110 transition-transform duration-1000" style={{ animationDelay: '1s' }} />
+      <div className="absolute bottom-1/3 right-1/4 w-24 h-24 bg-gradient-to-br from-[#E4BFA7]/8 to-[#FFF8E7]/8 rounded-full animate-pulse transform hover:scale-110 transition-transform duration-1000" style={{ animationDelay: '2s' }} />
+      <div className="absolute top-1/2 left-10 w-16 h-16 bg-gradient-to-br from-[#FFF8E7]/8 to-[#ADC7AC]/8 rounded-full animate-pulse transform hover:scale-110 transition-transform duration-1000" style={{ animationDelay: '0.5s' }} />
+      
+      {/* Additional floating elements for elegance */}
+      <div className="absolute top-3/4 right-1/2 w-6 h-6 bg-[#ADC7AC]/10 rounded-full animate-bounce" style={{ animationDelay: '3s', animationDuration: '3s' }} />
+      <div className="absolute top-1/6 left-2/3 w-4 h-4 bg-[#E4BFA7]/10 rounded-full animate-bounce" style={{ animationDelay: '4s', animationDuration: '4s' }} />
     </div>
   );
 };
