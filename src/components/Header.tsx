@@ -12,9 +12,9 @@ const Header = () => {
           
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 bg-gradient-to-br from-[#ADC7AC] to-[#E4BFA7] rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg font-playfair">U</span>
+              <span className="text-white font-bold text-lg">U</span>
             </div>
-            <span className="text-2xl font-bold text-gray-800 font-playfair">UniMart</span>
+            <span className="text-2xl font-bold text-gray-800">UniMart</span>
             <ShoppingCart className="h-6 w-6 text-gray-600 ml-2" />
           </div>
         </div>

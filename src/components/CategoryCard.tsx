@@ -29,12 +29,12 @@ const CategoryCard = ({ category }: CategoryCardProps) => {
       
       {/* Content */}
       <div className="relative z-20 p-6">
-        <h3 className="text-xl font-semibold text-gray-800 mb-4 font-playfair group-hover:text-gray-900 transition-colors duration-300">
+        <h3 className="text-xl font-semibold text-gray-800 mb-4 group-hover:text-gray-900 transition-colors duration-300">
           {category.title}
         </h3>
         
         <div className="flex gap-3">
-          <button className="flex-1 bg-white border border-gray-200 text-gray-700 px-4 py-2 rounded-lg font-medium transition-all duration-300 hover:shadow-md hover:border-[#ADC7AC] hover:text-[#ADC7AC] hover:-translate-y-1 flex items-center justify-center gap-2 font-inter text-sm group/btn">
+          <button className="flex-1 bg-gradient-to-r from-[#ADC7AC]/10 to-[#E4BFA7]/10 border border-gray-200 text-gray-700 px-4 py-2 rounded-lg font-medium transition-all duration-300 hover:shadow-md hover:border-[#ADC7AC] hover:text-[#ADC7AC] hover:-translate-y-1 flex items-center justify-center gap-2 text-sm group/btn">
             <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover/btn:rotate-12" />
             Check now!
           </button>
